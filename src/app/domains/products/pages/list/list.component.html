@@ -1,0 +1,9 @@
+<div class="container ml-2 mr-2">
+    <app-header />
+    <div class="grid grid-cols-5 gap-5">
+        <app-product
+        *ngFor="let product of products()"
+        [product]="product"
+        (addToCart)="addToCart($event)" />
+    </div>
+</div>

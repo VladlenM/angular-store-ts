@@ -1,0 +1,9 @@
+<div>
+    <div #wave></div>
+    <button (click)="playPause()">
+        <span *ngIf="isPlaying(); else elseBlock"><img src="assets/Icons/pausa.png" alt="pausa" class="w-6"></span>
+        <ng-template #elseBlock>
+            <span><img src="assets/Icons/play.png" alt="play" class="w-6"></span>
+        </ng-template>
+    </button>
+</div>
